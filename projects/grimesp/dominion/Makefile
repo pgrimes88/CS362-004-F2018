@@ -33,7 +33,7 @@ unittestresults:
 	make cardtest3
 	make cardtest4
 	
-	./unittest1 > unittestresults.out
+	./unittest1 &> unittestresults.out
 	./unittest2 >> unittestresults.out
 	./unittest3 >> unittestresults.out
 	./unittest4 >> unittestresults.out
@@ -42,7 +42,7 @@ unittestresults:
 	./cardtest3 >> unittestresults.out
 	./cardtest4 >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
-	cat dominion.c.gcov >> unittestresult.out
+	cat dominion.c.gcov >> unittestresults.out
 playdom: dominion.o playdom.c
 	gcc -o playdom playdom.c -g dominion.o rngs.o $(CFLAGS)
 #To run playdom you need to entere: ./playdom <any integer number> like ./playdom 10*/
