@@ -526,7 +526,6 @@ int drawCard(int player, struct gameState *state)
 {	int count;
   int deckCounter;
   if (state->deckCount[player] <= 0){//Deck is empty
-    
     //Step 1 Shuffle the discard pile back into a deck
     int i;
     //Move discard to deck
@@ -558,7 +557,7 @@ int drawCard(int player, struct gameState *state)
 
     if (deckCounter == 0)
       return -1;
-
+      
     state->hand[player][count] = state->deck[player][deckCounter - 1];//Add card to hand
     state->deckCount[player]--;
     state->handCount[player]++;//Increment hand count
