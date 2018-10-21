@@ -25,23 +25,38 @@ unittestresults:
 	unittestresults.out
 unittestresults:
 	make unittest1
-	make unittest2
-	make unittest3
-	make unittest4
-	make cardtest1
-	make cardtest2
-	make cardtest3
-	make cardtest4
-	
 	./unittest1 &> unittestresults.out
+	gcov dominion.c >> unittestresults.out
+	
+	make unittest2
 	./unittest2 >> unittestresults.out
+	gcov dominion.c >> unittestresults.out
+	
+	make unittest3
 	./unittest3 >> unittestresults.out
+	gcov dominion.c >> unittestresults.out
+	
+	make unittest4
 	./unittest4 >> unittestresults.out
+	gcov dominion.c >> unittestresults.out
+	
+	make cardtest1
 	./cardtest1 >> unittestresults.out
+	gcov dominion.c >> unittestresults.out
+	
+	make cardtest2
 	./cardtest2 >> unittestresults.out
+	gcov dominion.c >> unittestresults.out
+	
+	make cardtest3
 	./cardtest3 >> unittestresults.out
+	gcov dominion.c >> unittestresults.out
+	
+	make cardtest4
 	./cardtest4 >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
+	gcov dominion.c >> unittestresults.out
+	
 	cat dominion.c.gcov >> unittestresults.out
 playdom: dominion.o playdom.c
 	gcc -o playdom playdom.c -g dominion.o rngs.o $(CFLAGS)

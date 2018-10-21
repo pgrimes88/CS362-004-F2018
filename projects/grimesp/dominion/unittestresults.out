@@ -5,6 +5,10 @@ second test Successful -- 50 < 100
 Third test Successful -- 100 > 50
 ALL TESTS SUCCESSFULLY COMPLETED
 
+File 'dominion.c'
+Lines executed:1.05% of 573
+Creating 'dominion.c.gcov'
+
 unittest2.c
 isGameOver Function
 PASS -- Game is not over after initializing gamestate
@@ -14,6 +18,10 @@ PASS -- game is over when province count == 0
 PASS -- game is over when 3 supply piles are 0
 Setting only last 3 supply piles equal to 0
 TEST FAILED
+
+File 'dominion.c'
+Lines executed:17.28% of 573
+Creating 'dominion.c.gcov'
 
 unittest3.c
 updateCoins Function
@@ -28,6 +36,10 @@ PASS -- bonus of -5 added was correct
 PASS -- handCount set to 0 means coins = 0
 ALL TESTS SUCCESSFULLY COMPLETED
 
+File 'dominion.c'
+Lines executed:17.63% of 573
+Creating 'dominion.c.gcov'
+
 unittest4.c
 kingdomCards Function
 PASS -- the random numbers passed to kingdomCards are the same as the array returned from it
@@ -35,12 +47,20 @@ PASS -- the 10 cards passed to kingdomCards are the same as the array returned f
 PASS -- Game is not over after initializing with new array
 ALL TESTS SUCCESSFULLY COMPLETED
 
+File 'dominion.c'
+Lines executed:19.90% of 573
+Creating 'dominion.c.gcov'
+
 cardtest1.c
 smithy
 PASS -- No change to victory card pile and kingdom card pile
 PASS -- Other players' states (hand, deck, action and turn remained the same).
 TEST FAILED -- Player did not draw 3 cards
 TEST FAILED -- Players deck did not go down 3 cards
+
+File 'dominion.c'
+Lines executed:24.78% of 573
+Creating 'dominion.c.gcov'
 
 cardtest2.c
 adventurer
@@ -53,6 +73,10 @@ Pass -- Copper was drawn from deck to hand
 Pass -- Silver was drawn from deck to hand
 FAILED TEST -- gold was not added from deck to hand 
 
+File 'dominion.c'
+Lines executed:30.19% of 573
+Creating 'dominion.c.gcov'
+
 cardtest3.c
 village
 PASS -- No change to victory card pile and kingdom card pile
@@ -63,6 +87,10 @@ PASS -- 1 card was added to played pile
 PASS -- number of actions increased by 2
 ALL TESTS SUCCESSFULLY COMPLETED
 
+File 'dominion.c'
+Lines executed:30.89% of 573
+Creating 'dominion.c.gcov'
+
 cardtest4.c
 Sea Hag
 PASS -- No change to victory card pile and kingdom card pile
@@ -70,6 +98,10 @@ PASS -- current players' states (hand, deck, dicard pile and turn remained the s
 PASS -- 1 card added to dicard pile by opponent
 TEST FAILED -- opponent deck count changed
 TEST FAILED -- top card of opponents deck isn't curse
+
+File 'dominion.c'
+Lines executed:31.94% of 573
+Creating 'dominion.c.gcov'
 
 File 'dominion.c'
 Lines executed:31.94% of 573
