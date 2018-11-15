@@ -1,3 +1,16 @@
+Random Test Village.c
+Test #1 Pass count 50000/50000  (Supply Count Unchanged)
+Test #2 Pass count 50000/50000  (other players unchanged (handcount, deckcount, actions and whoseturn))
+Test #3 Pass count 49991/50000  (handcount was NOT changed of current player (draw 1 play 1))
+Test #4 Pass count 50000/50000  (deckcount was changed of current player - 1 card)
+Test #5 Pass count 50000/50000  (number of actions was increased by 2)
+File 'dominion.c'
+Lines executed:78.01% of 573
+Branches executed:82.94% of 422
+Taken at least once:68.72% of 422
+Calls executed:68.75% of 96
+Creating 'dominion.c.gcov'
+
         -:    0:Source:dominion.c
         -:    0:Graph:dominion.gcno
         -:    0:Data:dominion.gcda
