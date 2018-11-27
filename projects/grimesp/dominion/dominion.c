@@ -1146,7 +1146,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
 
 int discardCard(int handPos, int currentPlayer, struct gameState *state, int trashFlag)
 {
-	
+	printf("\n\n%d    ",state->discardCount);
   //if card is not trashed, added to Played pile 
   if (trashFlag < 1)
     {
@@ -1178,7 +1178,7 @@ int discardCard(int handPos, int currentPlayer, struct gameState *state, int tra
       //reduce number of cards in hand
       state->handCount[currentPlayer]--;
     }
-	
+	printf("%d\n\n    ",state->discardCount);
   return 0;
 }
 
@@ -1255,6 +1255,7 @@ int adventurerFunction(struct gameState *state){
   int temphand[MAX_HAND];// moved above the if statement
   int drawntreasure=0;
   int cardDrawn;
+  printf("\n\n%d    ",state->handCount);
   int z = 0;// this is the counter for the temp hand
   if (nextPlayer > (state->numPlayers - 1)){
     nextPlayer = 0;
@@ -1278,6 +1279,7 @@ int adventurerFunction(struct gameState *state){
 	z=z-1;
       }
       return 0;
+      
 }
 
 int council_roomFunction(int handPos, struct gameState *state){
